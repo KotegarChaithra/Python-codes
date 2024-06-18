@@ -11,7 +11,7 @@ if True:
 
 if False:
     print("I'm right") ## If it is false , if block skipped it wont return any output
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## we want some more, Everyone knows True and False , what in reality we have some logics, we'll get inputfrom user,
 ## how to do that
 ## Example: If the number is even or odd
@@ -31,9 +31,9 @@ r=x%2 #o/p will get reminder as '1'
 
 if r==1:
     print("Odd") # hence it will print 'Odd' else it will print only 'Bye'
-print("Bye")# this 'Bye' outside if statement hence  anyway whether the if conditiontrue or fasle it will
+print("Bye")# this 'Bye' outside if statement hence  anyway whether the if condition true or false it will
               # print 'Bye'
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## We wan't code to be in efficient way right?
 # so,
 x=2
@@ -44,7 +44,7 @@ if r==0: #reminder will be 0
 else:
     print("Odd") # else it prints Odd
 print("Bye") # Any how bye is out of if block , it will execute
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## If there is sequence of conditions that need to be executed , then how?
 #Example:
 n=int(input("Enter a number")) # user input It could be any number

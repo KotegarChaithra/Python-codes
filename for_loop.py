@@ -18,7 +18,7 @@ for i in range(10):
 for i in range(11,21,1): #(start,end,step)
     print(i)
 
-#--------------------------------------------------
+#---------------------------------------------------
 #going in reverse order
 for i in range(20,10,-1):
     print(i)

@@ -18,7 +18,7 @@ i=5 #initialization
 while i>=1: # condition
     print("Chaithra",i) # no of time chaithra printed also printin in 'i'
     i=i-1 #decrement
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 # Can we use multiple while:
 i=1 #initializatio
 while i<=5: # condition

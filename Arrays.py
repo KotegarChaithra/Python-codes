@@ -69,10 +69,10 @@ print(vals.buffer_info())
 
 #output :
 # (2205113376720, 5) // [address of array, how many number of elements]
-
-from array import *
-vals = array('i',[5,9,-8,4,2])
-print(vals.typecode)
+#
+# from array import *
+# vals = array('i',[5,9,-8,4,2])
+# print(vals.typecode)
 
 #output :
 # i
@@ -171,3 +171,77 @@ while i<len(newArray):
 # 64
 # 16
 # 4
+
+#--------------------------------------------------------------
+#How to create arraysby taking user input, if youdon't know the size of the array
+from array import *
+
+arr = array('i',[])
+n = int(input("Enter the length of the array:"))
+
+for i in range(n):
+    x = int(input("Enter the next value:"))
+    arr.append(x)
+
+print(arr)
+
+#output:
+# Enter the length of the array:4
+# Enter the next value:16
+# Enter the next value:20
+# Enter the next value:14
+# Enter the next value:52
+# array('i', [16, 20, 14, 52])
+
+#every time we ask the value from user, and if we want to search a value and it should say the index value
+
+
+from array import *
+
+arr = array('i',[])
+n = int(input("Enter the length of the array:"))
+
+for i in range(n):
+    x = int(input("Enter the next value:"))
+    arr.append(x)
+
+print(arr)
+
+val = int(input("Enter the value for search:"))
+
+k=0
+for e in arr:
+    if e==val:
+        print(k)
+        break
+    k+=1
+#output:
+# Enter the length of the array:4
+# Enter the next value:14
+# Enter the next value:16
+# Enter the next value:24
+# Enter the next value:13
+# array('i', [14, 16, 24, 13])
+# Enter the value for search:24
+# 2
+
+#search element by using function 'index()
+from array import *
+arr= array('i',[])
+n  = int(input("Enter the length:"))
+for i in range(n):
+    x = int(input("Enter the value:"))
+    arr.append(x)
+print(arr)
+
+val=int(input("Enter the search element:"))
+print(arr.index(val))
+
+#output:
+# Enter the length:3
+# Enter the value:1
+# Enter the value:2
+# Enter the value:3
+# array('i', [1, 2, 3])
+# Enter the search element:3
+# 2
